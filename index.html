@@ -1,6 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamSeeking - 本地安全的 AI 智能体团队协作平台</title>
+    <meta name="description" content="TeamSeeking 是一个开源的 AI 智能体团队协作平台，支持国内使用 OpenAI，纯本地执行，数据安全，手机远程控制">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="imgs/teamseeking.png" alt="TeamSeeking Logo" class="logo">
+                <span class="brand-name">TeamSeeking</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">首页</a></li>
+                <li><a href="#scenarios">使用场景</a></li>
+                <li><a href="#demo">演示</a></li>
+                <li><a href="#contact">联系我们</a></li>
+                <li><a href="#" class="nav-cta-btn">立即安装</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-<h1>Hello! Teamseeking!</h1>
+    <!-- Hero 区域 -->
+    <section id="features" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">打造你的私人AI智能体团队</h1>
+                <div class="hero-features">
+                    <div class="hero-feature-item">
+                        <div class="hero-feature-icon">💬</div>
+                        <div class="hero-feature-text">
+                            <h3>简单对话，智能协作</h3>
+                            <p>通过聊天就能指挥你的数字智能体团队，协作完成文案写作、视频剪辑、数据调研等日常工作</p>
+                        </div>
+                    </div>
+                    <div class="hero-feature-item">
+                        <div class="hero-feature-icon">🌏</div>
+                        <div class="hero-feature-text">
+                            <h3>国内可用，世界领先</h3>
+                            <p>每个智能体都可以调用世界领先的AI大模型，无需复杂配置，开箱即用</p>
+                        </div>
+                    </div>
+                    <div class="hero-feature-item">
+                        <div class="hero-feature-icon">🔐</div>
+                        <div class="hero-feature-text">
+                            <h3>数据安全，完全本地</h3>
+                            <p>所有任务在本地执行，数据不上传第三方，保护你的隐私和机密信息</p>
+                        </div>
+                    </div>
+                    <div class="hero-feature-item">
+                        <div class="hero-feature-icon">📱</div>
+                        <div class="hero-feature-text">
+                            <h3>随时随地，远程控制</h3>
+                            <p>通过手机即可远程指挥电脑上的智能体团队，无论身在何处都能高效工作</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary">立即安装</a>
+                    <a href="#demo" class="btn btn-secondary">观看演示</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<h1>Hello! 2!</h1>
+    <!-- 使用场景 -->
+    <section id="scenarios" class="scenarios">
+        <div class="container">
+            <h2 class="section-title">使用场景</h2>
+            <p class="section-subtitle">看看 TeamSeeking 如何帮助你完成工作</p>
 
-<h1>Hello! 3!</h1>
+            <!-- 内容创作场景 -->
+            <div class="scenario-card">
+                <div class="scenario-info">
+                    <div class="scenario-icon">✍️</div>
+                    <div class="scenario-content">
+                        <h3>内容创作项目群</h3>
+                        <p>多智能体协作完成文章撰写、编辑、校对、发布全流程</p>
+                    </div>
+                </div>
+                <div class="chat-demo">
+                    <div class="chat-header">
+                        <span class="chat-title">TeamSeeking</span>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message user">
+                            <div class="message-avatar">👤</div>
+                            <div class="message-body">
+                                <div class="message-name">你</div>
+                                <div class="message-content">写一篇关于 AI 智能体的公众号文章</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">📝</div>
+                            <div class="message-body">
+                                <div class="message-name">撰稿人</div>
+                                <div class="message-content">正在撰写文章大纲和初稿...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">🔍</div>
+                            <div class="message-body">
+                                <div class="message-name">编辑</div>
+                                <div class="message-content">正在优化文章结构和表达...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">👀</div>
+                            <div class="message-body">
+                                <div class="message-name">校对员</div>
+                                <div class="message-content">正在检查错别字和语法...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">✅</div>
+                            <div class="message-body">
+                                <div class="message-name">任务完成</div>
+                                <div class="message-content">文章已完成！字数 1200 字，已排版，可直接发布。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 视频剪辑场景 -->
+            <div class="scenario-card">
+                <div class="scenario-info">
+                    <div class="scenario-icon">🎬</div>
+                    <div class="scenario-content">
+                        <h3>视频剪辑项目群</h3>
+                        <p>智能剪辑、自动字幕、背景音乐推荐，一键生成专业视频</p>
+                    </div>
+                </div>
+                <div class="chat-demo">
+                    <div class="chat-header">
+                        <span class="chat-title">TeamSeeking</span>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message user">
+                            <div class="message-avatar">👤</div>
+                            <div class="message-body">
+                                <div class="message-name">你</div>
+                                <div class="message-content">把这段录屏剪成一个 30 秒的短视频</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">🎬</div>
+                            <div class="message-body">
+                                <div class="message-name">剪辑师</div>
+                                <div class="message-content">正在分析视频内容，提取精彩片段...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">📝</div>
+                            <div class="message-body">
+                                <div class="message-name">字幕员</div>
+                                <div class="message-content">正在生成字幕...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">🎵</div>
+                            <div class="message-body">
+                                <div class="message-name">音乐师</div>
+                                <div class="message-content">正在匹配背景音乐...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">✅</div>
+                            <div class="message-body">
+                                <div class="message-name">任务完成</div>
+                                <div class="message-content">视频已生成！时长 29 秒，字幕已添加，背景音乐已匹配。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 智能办公场景 -->
+            <div class="scenario-card">
+                <div class="scenario-info">
+                    <div class="scenario-icon">💼</div>
+                    <div class="scenario-content">
+                        <h3>智能办公项目群</h3>
+                        <p>PPT制作、会议纪要、邮件回复、文档处理，办公效率翻倍</p>
+                    </div>
+                </div>
+                <div class="chat-demo">
+                    <div class="chat-header">
+                        <span class="chat-title">TeamSeeking</span>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message user">
+                            <div class="message-avatar">👤</div>
+                            <div class="message-body">
+                                <div class="message-name">你</div>
+                                <div class="message-content">帮我生成一份季度工作汇报 PPT</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">📊</div>
+                            <div class="message-body">
+                                <div class="message-name">数据整理员</div>
+                                <div class="message-content">正在整理季度数据和关键指标...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">🎨</div>
+                            <div class="message-body">
+                                <div class="message-name">设计师</div>
+                                <div class="message-content">正在设计 PPT 模板和图表...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">✍️</div>
+                            <div class="message-body">
+                                <div class="message-name">文案师</div>
+                                <div class="message-content">正在编写各页内容要点...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">✅</div>
+                            <div class="message-body">
+                                <div class="message-name">任务完成</div>
+                                <div class="message-content">PPT 已生成！共 15 页，包含数据图表和总结。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 知识管理场景 -->
+            <div class="scenario-card">
+                <div class="scenario-info">
+                    <div class="scenario-icon">📚</div>
+                    <div class="scenario-content">
+                        <h3>知识管理项目群</h3>
+                        <p>自动整理文档、提取关键信息、生成知识图谱，让知识管理更高效</p>
+                    </div>
+                </div>
+                <div class="chat-demo">
+                    <div class="chat-header">
+                        <span class="chat-title">TeamSeeking</span>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message user">
+                            <div class="message-avatar">👤</div>
+                            <div class="message-body">
+                                <div class="message-name">你</div>
+                                <div class="message-content">帮我整理最近一周的 AI 行业资讯</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">📁</div>
+                            <div class="message-body">
+                                <div class="message-name">资料收集员</div>
+                                <div class="message-content">正在收集 AI 行业资讯...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">📊</div>
+                            <div class="message-body">
+                                <div class="message-name">分析师</div>
+                                <div class="message-content">已完成资讯整理，生成知识图谱中...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">✅</div>
+                            <div class="message-body">
+                                <div class="message-name">任务完成</div>
+                                <div class="message-content">已整理完成！共收集 23 篇资讯，提取 5 个关键趋势，知识图谱已生成。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 数据分析场景 -->
+            <div class="scenario-card">
+                <div class="scenario-info">
+                    <div class="scenario-icon">📊</div>
+                    <div class="scenario-content">
+                        <h3>数据分析项目群</h3>
+                        <p>自动收集数据、生成报表、可视化展示，洞察业务趋势</p>
+                    </div>
+                </div>
+                <div class="chat-demo">
+                    <div class="chat-header">
+                        <span class="chat-title">TeamSeeking</span>
+                    </div>
+                    <div class="chat-messages">
+                        <div class="message user">
+                            <div class="message-avatar">👤</div>
+                            <div class="message-body">
+                                <div class="message-name">你</div>
+                                <div class="message-content">分析本月销售数据并生成报告</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">📈</div>
+                            <div class="message-body">
+                                <div class="message-name">数据收集员</div>
+                                <div class="message-content">正在从各渠道收集销售数据...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">🔬</div>
+                            <div class="message-body">
+                                <div class="message-name">分析师</div>
+                                <div class="message-content">正在进行数据分析和趋势预测...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">📊</div>
+                            <div class="message-body">
+                                <div class="message-name">可视化专家</div>
+                                <div class="message-content">正在生成图表和报表...</div>
+                            </div>
+                        </div>
+                        <div class="message assistant">
+                            <div class="message-avatar">✅</div>
+                            <div class="message-body">
+                                <div class="message-name">任务完成</div>
+                                <div class="message-content">分析报告已生成！销售额同比增长 23%，发现 3 个增长机会。</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 演示区域 -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <h2 class="section-title">产品演示</h2>
+            <p class="section-subtitle">看看 TeamSeeking 如何工作</p>
+            <div class="demo-content">
+                <div class="demo-placeholder">
+                    <div class="demo-icon">▶️</div>
+                    <p>演示视频即将推出</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 区域 -->
+    <section class="cta">
+        <div class="container">
+            <h2>准备好开始了吗？</h2>
+            <p>加入 TeamSeeking，让 AI 智能体团队为你服务</p>
+            <div class="cta-actions">
+                <a href="#" class="btn btn-primary btn-large">立即安装</a>
+                <button onclick="showContact()" class="btn btn-secondary btn-large">联系我们</button>
+            </div>
+
+            <!-- 联系弹窗 -->
+            <div id="contact-modal" class="modal">
+                <div class="modal-content">
+                    <span class="modal-close" onclick="closeModal()">&times;</span>
+                    <div class="modal-body">
+                        <div class="contact-icon">📧</div>
+                        <h3>联系我们</h3>
+                        <p class="contact-email">hi@teamseeking.com</p>
+                        <p class="contact-tip" id="copy-tip">点击邮箱地址可复制</p>
+                        <a href="mailto:hi@teamseeking.com" class="btn btn-primary">发送邮件</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="imgs/teamseeking.png" alt="TeamSeeking Logo" class="footer-logo">
+                    <h3>TeamSeeking</h3>
+                    <p>打造你的私人AI智能体团队</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#features">首页</a></li>
+                        <li><a href="#scenarios">使用场景</a></li>
+                        <li><a href="#demo">产品演示</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="mailto:hi@teamseeking.com">邮箱: hi@teamseeking.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 TeamSeeking. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 显示联系弹窗
+        function showContact() {
+            document.getElementById('contact-modal').classList.add('show');
+        }
+
+        // 关闭弹窗
+        function closeModal() {
+            document.getElementById('contact-modal').classList.remove('show');
+        }
+
+        // 点击弹窗外部关闭
+        window.onclick = function(event) {
+            const modal = document.getElementById('contact-modal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // 点击邮箱复制
+        document.addEventListener('DOMContentLoaded', function() {
+            const emailElement = document.querySelector('.contact-email');
+            if (emailElement) {
+                emailElement.style.cursor = 'pointer';
+                emailElement.addEventListener('click', function() {
+                    const email = this.textContent;
+                    navigator.clipboard.writeText(email).then(function() {
+                        document.getElementById('copy-tip').textContent = '✓ 已复制到剪贴板！';
+                        setTimeout(function() {
+                            document.getElementById('copy-tip').textContent = '点击邮箱地址可复制';
+                        }, 2000);
+                    }).catch(function() {
+                        document.getElementById('copy-tip').textContent = '请手动复制邮箱地址';
+                    });
+                });
+            }
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

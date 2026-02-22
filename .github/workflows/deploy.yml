@@ -1,11 +1,15 @@
 name: Deploy static content to Pages
+
+# 修改这里：取消 push 触发，改为手动触发
 on:
-  push:
-    branches: ["main"] # 当 main 分支有变动时触发
+  workflow_dispatch: 
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
+# 后面的 jobs 部分保持不变...
 jobs:
   deploy:
     environment:
@@ -20,7 +24,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.' # 部署根目录下的所有文件
+          path: '.' 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
